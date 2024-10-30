@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter wihtout setInterval</title>
+</head>
+<body>
+    <h1>Counter</h1> <br><br>
+    <input id="duration" type="text" placeholder="enter duration for counter">
+    <div id="root"></div>
+
+
+    <script>
+        const root = document.getElementById('root')
+        const duration  = document.getElementById('duration').value
+        let counter=  0
+        function Counter(duration){
+            counter ++;
+            const element = document.createElement('h1')
+            element.innerHTML=`<h1>${counter}</h1>`
+            root.appendChild(element)
+            setTimeout(Counter, 1000)
+        }
+        Counter();
+
+
+    </script>
+</body>
+</html>
