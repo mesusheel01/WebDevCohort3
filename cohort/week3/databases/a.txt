@@ -1,0 +1,6 @@
+- MongoDB lets you create databases
+- In each db, it letes you create tables (colections)
+- In each table , it lets you dump JSON data
+- It is schemaless
+- it scales well and is a decent choice for most use cases.
+

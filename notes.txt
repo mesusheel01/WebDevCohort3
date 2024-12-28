@@ -1,0 +1,5 @@
+-span tag doesnt take whole height and width it just take the space that is needed
+
+- heading h1 - h6
+
+- margin lets you put some space outside the div evenly and padding lets you put some space inside the div evenly.

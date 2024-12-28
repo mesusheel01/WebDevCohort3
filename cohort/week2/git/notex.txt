@@ -1,0 +1,72 @@
+What is git?
+
+  - free and open source version control system.
+  - with version control system you  are able to keep track of your codebase changes and push newer version of your system.
+
+Why git?
+
+- Free
+- Open source
+- scalable
+- super fast
+- cheap branching and merging
+
+
+What is github?
+
+- GitHub is a web-based hosting service for git repos.
+
+- You can use git wihtout github, but you cannot use github without git.
+
+req:
+ -local repository
+ - working directory and staging area or index.
+ - push
+ - pull
+
+
+Basic workflow of git.
+
+step1- You modify a file from the working directory
+
+step2- You add these files to the staging area.
+
+step3- You perform commit opoeration that mov3es the files from the staging area. After push opoeration, it stores the changes permanently to the git repoitory.
+
+                      _  working directory
+                     |  
+                  git add 
+                        |
+                         - staging area _   
+                                         | 
+                                        git commit
+                                         |
+                            repository  -
+                        
+
+Blobs - Blob stand for binary large object. Each version o a file is represented by blob.  A blob holds the file data but doesn't contain any metadata about the file. It is a binary file, and in git database, it is names as SHA1 hash of that file. in git, files are not addressed by names. Everything is content-addresssed.
+
+Trees - Tee is an object which represnets a directory. it holds bolobs as well as other sub-directories. A tree is a binary file taht store s refrences to blobs and trees which are also named as SHA1 hash of the tree object.
+
+
+
+Commits : 
+          
+        -> Commit holds the current state of the repository. A commit is also named by   SHA1 hash.
+        -> Commit object =  a node of linked list.
+        -> Every commit object has a pointer to the parent commit object. 
+        ->: From a given comit, you can travers e back by looking at the parent pointer to view the history of the Commit.
+
+
+Git Commands : 
+             
+             - clone 
+             - add
+             - commit
+             - push
+             - pull
+            
+                                      
+
+
+ 

@@ -1,0 +1,45 @@
+
+<html>
+  <head>
+    <title>Calculate Time and Interest App!</title>
+  </head>
+  <body>
+    <input oninput="populateDiv()" id="pri" type="text" placeholder="Enter principle">
+    <br> <br>
+    <input oninput="populateDiv() "id="rate" type="text" placeholder="Enter rate">
+    <br> <br>
+    <input oninput="populateDiv()" id="time" type="text" placeholder="Enter time">
+    <br> <br>
+    <div id="result"></div>
+
+    <script>
+      let timeout;
+      const populateDiv =  ()=>{
+        clearTimeout(timeout)
+        timeout = setTimeout(()=>{
+          calculate()
+        },1000)
+      
+      }
+      const calculate = async () => {
+        const principle = document.getElementById('pri').value;
+        const rate = document.getElementById('rate').value;
+        const time = document.getElementById('time').value;
+        const print = document.getElementById('result');
+        
+        try {
+          const response = await fetch(`http://localhost:3000/interest?principle=${principle}&rate=${rate}&time=${time}`);
+          if (!response.ok) {
+            throw new Error('Failed to fetch data');
+          }
+          const data = await response.json();
+          print.textContent = `Calculated Interest: ${data.msg}`;
+        } catch (error) {
+          console.error('Error:', error);
+          print.textContent = 'Error occurred during calculation';
+        }
+      }
+    </script>
+  </body>
+</html>
+

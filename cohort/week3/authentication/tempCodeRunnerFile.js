@@ -1,0 +1,2 @@
+
+const userExist = (username, pass)=

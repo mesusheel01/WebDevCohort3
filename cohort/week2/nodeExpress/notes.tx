@@ -1,0 +1,146 @@
+What is ecmaScript ?
+
+-: Ecmascript is the scripting language specifically on which js is based.
+
+-: JS is a scripting language that conforms to the ecmascript specification. It's the most widely known and used implementation of ecmascript.
+
+Common JS browers engines: 
+  - V8 used by chrome/chromium-C
+  - SpiderMonkey -used by firefox - C + Rust
+
+What is Node.js?
+
+-: Some smart peolpe took out the v8 engine, added some backend things on top to crate a new runtime to compete with BE languages like java.
+-: Js was never meant to be run int hte backend Eventually became very popular and is a populart choice of runtime on the backend.
+
+What is Bun?
+
+-: Other than the fact that js is a single thereaded, Node.js is slow (multiple reasons for it)
+-: Some smart people said they wanted to re-write the js runtime for the backedn and introduced Bun 
+- It is significantly faster rruntime 
+- It is written in Zig
+- https://github.com/oven-sh/bun
+
+
+What can you do with Node.js?
+
+-: Create clis
+-: Create a video player
+-: Create a game
+-: Create an HTTP server
+
+What is Http server?
+
+-: Http - hyper text transfer protocol
+
+1. A protocol that is defined for machines to communicate
+2. Specifically for websites, it is the most common way for your website's frontend to talk to its backend.
+
+-: A server accepts request from user and process the request and respond accodingly.
+
+e.g. Think of them as functions, where arguments are something the client sends, rather thn caling a functino userig its name, the client uses a URL, rather than the functino body, the server does something with the request , rather than the fucntion returning a value, the server responds with some data.
+
+
+
+      - (protocol(http/https))
+      - (address (url/ports))
+http: - (route)
+      - (header/body/ query parameter)
+      - Method(Get/Post)
+
+
+Things server needs to worry about:
+    - Response header
+    - Response body
+    - Status codes
+
+https://chat.openai.com/backend-api/conversation
+   |            |               |   
+protocol     domain           route
+
+
+-: Status code indicates what every event have occured after the request is sent by the user like eg. status code 200 -> ok request is resolved
+
+
+What happens if you type google.com and fires a request from your browser? 
+
+-: Things that happen in your browser after you fire this request :
+    1. Browser parses the url 
+    2. Does a DNS lookup (conversts google.com to an IP)
+    3. Esatblishes a conection to the IP
+
+
+What is DNS resolution?
+
+-: URls are just like contacts in your phone
+   In the end, they map to an IP 
+   If you every buy a url of your own, you will need to point it to the IP of your server.
+
+
+
+Things that happen on your server after the request is recieved:
+          You get the inputs(route, body, headers)
+          You do some logic on the input, calculate the output
+          You return the output body, headers and status code.
+
+
+What are the common methods you can send to your BE server?
+
+- Get
+- Post
+- Put
+- Delete
+
+
+What are the common status codes the BE server ?
+
+200 - Everything is ok
+404 - Page/roue not found
+403 - Authentication error
+500 - Internal Server error
+ 
+How to  access localhosted app from diffrent device?
+
+-: get the ip of your network and put in your another device with :port and hit the request
+
+
+
+----------------Middlewares, Authentication, global catches, zod-----------------------------
+
+--> Middlewares:
+
+  --Doctor examples with Middlewares:
+      - Before we proceed, lets add contrainsts to our route :
+      1. User needs to send a kidneyId as a query param which should be a number from 1-2(Humans only has 2 kidneys).
+      2. User should send a username and password in headers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

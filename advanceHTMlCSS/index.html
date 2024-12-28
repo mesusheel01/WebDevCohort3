@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background: #000;
+        color: white;
+    }
+    li{
+        background: #000;
+        color: white;
+    }
+    li:hover{
+        color: pink;
+        background-color: gray;
+    }
+    /* + is used to select sibling */
+    button:focus + #banner{
+        display: block;
+    }
+    #banner{
+        display: none;
+        width: 100px;
+        height: 100px;
+        background-color: blueviolet;
+        color: white;
+    }
+    ul li:nth-child(2n+1){
+        background-color: pink;
+        color: black;
+    }
+    /* ul li:nth-child(2n+1):hover{
+        background-color: blue;
+        color: pink;
+    } */
+</style>
+<body>
+    <h1>About me</h1>
+    <p>My name is <b>Susheel Rai</b> and I am the founder of LearnVerse</p>
+    <p>My Tech stack currently</p>
+    <button >Display bolt-list</button>
+    <iframe id="banner" src="https://bolt-list.vercel.app"  title="my_first_solo_project" >I am visible?</iframe>
+    <div>
+        <ul>
+            <li>HMTL5</li>
+            <li>CSS3</li>
+            <li>Express</li>
+            <li>Node</li>
+            <li>React</li>
+            <li>MongoDb</li>
+        </ul>
+    </div>
+</body>
+</html>

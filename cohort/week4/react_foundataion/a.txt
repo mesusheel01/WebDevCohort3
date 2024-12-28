@@ -1,0 +1,4 @@
+--> Dom manipulation is very hard to write as a dev making dynamic websites, with the primitives that DOM provides you to very hard.
+
+
+

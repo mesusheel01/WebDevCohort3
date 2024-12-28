@@ -1,0 +1,12 @@
+--- Monogo DB----
+
+mongoose --> define your schma
+
+mongoose is a library used to access mongodb db via express on top of node js
+
+- In mongooose first you have to define the schema
+- This sounds counter intuitive since mognodb is schemaless?
+- That is true, but mongoose makes you define schmea for thing like autocompletions/ validating data before it goes in the DB to make sure you're doing things right 
+- Schemaless dbs can be very dangerous, using schmeas in mongo makes it slightly less dangerous.
+
+

@@ -1,0 +1,38 @@
+What is DOM? 
+
+- A programming interfacce for web documents
+- Dom is not a programming language
+- Represents the page so that programs can change the document structure, style and content.
+- The dom is a tree-loike representation 
+
+Accesing the dom :
+
+- When you create a script, whethre inline a <script> element or include in the web pgage, you can immediately begin using the api for the document or window objects to manipulate the document itself.
+
+-The dom was designed to be independent of any particualr programming language, making the structural representaation of the document available from a single consistent api 
+
+DOM is a tree-like representation of the web page that gets loaded into the browser.
+
+                          document
+                              |
+                              HTML
+                          |         |
+                        Head        Body
+                          |        |     |
+                        Title      h1    p
+                          |        |       |
+                  'my document' 'header'   'paragraph'
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<HTML>
+  <HEAD>
+      <title>Manipulating dom </title>
+    <BODY>
+        <h2 id="heading-2">Hey this is a h2 heading!</h2>
+        <p class="para">This is a bunch of paragraphs.</p>
+        <p  class="para">This is a bunch of paragraphs.</p>
+        <p class="para">This is a bunch of paragraphs.</p>
+        <p class="para">This is a bunch of paragraphs.</p>
+        <p class="para">This is a bunch of paragraphs.</p>
+        <div id="myDiv"></div>
+
+        <script>
+
+          const para = document.createElement('p')
+          para.innerHTML = 'This is a paragraph where it will be dynamically added by document or window property provided by the web api'
+          document.getElementsById('myDiv').appendChild(para)
+        </script>
+    </BODY>
+  </HEAD>
+</HTML>

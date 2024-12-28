@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="firstNum" type="text" placeholder="First number"><br><br>
+    <input id="secondNum" type="text" placeholder="Second number"><br><br>
+    <button onclick="calculateSum()">Sum</button>
+    <div id="promptSum"></div>
+
+    <script>
+
+        const calculateSum = async ()=>{
+            const firstNum = document.getElementById('firstNum').value
+            const secondNum = document.getElementById('secondNum').value
+            const ele = document.getElementById('promptSum')
+            const res = await fetch(`https:/sum-server.100xdevs.com/sum?a=${firstNum}&b=${secondNum}`)
+            ele.appendChild(res)
+        }
+
+
+
+    </script>
+
+</body>
+</html>
