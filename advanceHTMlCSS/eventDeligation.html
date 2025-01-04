@@ -1,0 +1,28 @@
+<html>
+
+  <head></head>
+  <body>
+
+    <div id="parent">
+
+        <button id="button1">1st button</button>
+        <button id="button2">2st button</button>
+        <button id="button3">3st button</button>
+
+      </div>
+
+    <script>
+      document.getElementById('parent').addEventListener('click', (e)=>{
+        if(e.target.id === 'button1'){
+          alert('Button1 Clicked!')
+        }else if(e.target.id === 'button2'){
+          alert('button2 is clicked!')
+        }else if(e.target.id === 'button3'){
+          alert('button3 is clicked')
+        }
+      })
+    </script>
+
+  </body>
+
+</html>

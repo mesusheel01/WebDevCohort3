@@ -1,6 +1,6 @@
-# We will study advance cocepets about html and css
+# We will study advance cocepets about html and cssA
 
-## HTML tags
+## HTML tags    
 
 - Meta tag contain the information about your webpage.
 
@@ -52,4 +52,6 @@
  - if a div has more than two childs we can use **nth-child(1)** selector to access that particular element on the webpage
  - We can use sudo selector on top of a sudo selector
 
- **Attr attribute** :  
+ **Attr attribute** :
+
+ What is diffrent between

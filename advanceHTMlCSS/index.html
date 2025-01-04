@@ -6,53 +6,44 @@
     <title>Document</title>
 </head>
 <style>
-    body{
-        background: #000;
-        color: white;
+    /* .container{
+        text-align:center;
     }
-    li{
-        background: #000;
-        color: white;
+    .content{
+        display:inline-block;
     }
-    li:hover{
-        color: pink;
-        background-color: gray;
-    }
-    /* + is used to select sibling */
-    button:focus + #banner{
-        display: block;
-    }
-    #banner{
-        display: none;
-        width: 100px;
-        height: 100px;
-        background-color: blueviolet;
-        color: white;
-    }
-    ul li:nth-child(2n+1){
-        background-color: pink;
-        color: black;
-    }
-    /* ul li:nth-child(2n+1):hover{
-        background-color: blue;
-        color: pink;
-    } */
+ */
+<!-- .container { -->
+<!--     position: relative; -->
+<!--     height: 100vh; -->
+<!-- } -->
+<!-- .content { -->
+<!--     position: absolute; -->
+<!--     top: 50%; -->
+<!--     left: 50%; -->
+<!--     transform: translate(-50%, -50%); -->
+<!-- } -->
+<!-- .container { -->
+<!--     display: grid; -->
+<!--     place-items: center; -->
+<!--     gap:10px; -->
+<!-- } -->
+    <!-- .container{ -->
+    <!--     display:flex; -->
+    <!--     flex-direction:column; -->
+    <!--     justify-content:center; -->
+    <!--     align-items: center; -->
+    <!--     height:100vh; -->
+    <!-- } -->
+    <!-- .content{ -->
+    <!--     width: 300px; -->
+
 </style>
 <body>
-    <h1>About me</h1>
-    <p>My name is <b>Susheel Rai</b> and I am the founder of LearnVerse</p>
-    <p>My Tech stack currently</p>
-    <button >Display bolt-list</button>
-    <iframe id="banner" src="https://bolt-list.vercel.app"  title="my_first_solo_project" >I am visible?</iframe>
-    <div>
-        <ul>
-            <li>HMTL5</li>
-            <li>CSS3</li>
-            <li>Express</li>
-            <li>Node</li>
-            <li>React</li>
-            <li>MongoDb</li>
-        </ul>
-    </div>
+   <div class="container">
+       <p class="content">This is susheel rai as a exmple for text</p>
+       <div class="content">This is another div</div>
+       <div class="content">This is another div</div>
+   </div>
 </body>
 </html>

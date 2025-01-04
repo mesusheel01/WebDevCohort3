@@ -1,0 +1,16 @@
+{
+    // "vim.statusBarColorControl": true,
+    // "vim.statusBarColors.normal": "#005f5f",
+    // "vim.statusBarColors.insert": "#5f0000",
+    // "vim.statusBarColors.visual": "#5f00af",
+    // "vim.statusBarColors.visualline": "#005f5f",
+    // "vim.statusBarColors.visualblock": "#86592d",
+    // "vim.statusBarColors.replace": "#000000",
+    // "editor.lineNumbers": "on",
+    // "vim.easymotion": true,
+    // "vim.incsearch": true,
+    // "vim.useSystemClipboard": true,
+    // "vim.useCtrlKeys": true,
+    // "vim.hlsearch": true
+}
+
