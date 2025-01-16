@@ -14,9 +14,12 @@ export default {
             myGreen: '#50C6B0',
             myBlack: '#000000',
             myBlue: "#92B8DC",
-            myBg:"#bcd4eb"
+            myBg:"#bcd4eb",
+            buttonBg:"#ED9390",
+            signBg: "#D9D9D9"
         },
         fontFamily: {
+            play:['Play', 'sans-serif'],
             poppins: ['Poppins', 'sans-serif'],
             overpass: ['Overpass', 'sans-serif'],
             overpassMono: ['Overpass Mono', 'sans-serif'],

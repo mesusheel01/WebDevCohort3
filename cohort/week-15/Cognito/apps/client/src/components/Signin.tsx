@@ -1,9 +1,14 @@
-import React from 'react'
+import { BrainOne } from "../assets/icons/Brain"
 
 const Signin = () => {
   return (
     <div>
-      <h1>Signin</h1>
+        {/* top imgae section */}
+        <div>
+            <BrainOne />
+        </div>
+        {/* below signin card sectiggon */}
+
     </div>
   )
 }

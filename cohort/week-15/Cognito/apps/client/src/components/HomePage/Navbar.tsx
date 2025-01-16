@@ -11,7 +11,7 @@ const Navbar = () => {
           <img src={logo} alt="logo" className="h-10 w-10" />
         </div>
         {/* user login section */}
-        <div className="flex font-overpass gap-4 mr-10">
+        <div className="flex font-overpass gap-4">
           <Button title={"Signin"} routeTo="/signin">
             Signin
           </Button>

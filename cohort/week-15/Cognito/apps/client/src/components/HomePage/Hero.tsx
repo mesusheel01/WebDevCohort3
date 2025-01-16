@@ -1,9 +1,8 @@
-import React from "react";
 import hero from "../../assets/images/hero.png";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col translate-y-10 sm:translate-y-0 md:m-20 lg:flex-row items-center lg:items-start justify-between gap-10 px-8 py-16">
+    <div className="flex flex-col translate-y-10 sm:translate-y-0 m-10 sm:m-20 lg:flex-row items-center lg:items-start justify-between gap-10 px-8 py-16">
       {/* Left Section */}
       <div className="flex flex-col gap-6 lg:w-1/2 lg:translate-y-20">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-overpassMono leading-tight">
